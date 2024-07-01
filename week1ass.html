@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>HORNBILL</title>
+  </head>
+  <style>
+    .navigationBar {
+      background-color: rgb(154, 188, 86);
+      overflow: hidden;
+      width: 95%;
+      float: right;
+      display: flex;
+      gap: 50.2rem;
+      position: sticky:
+    }
+    .navigationBar a {
+      float: left;
+      color: #f2f2f2;
+      text-align: end;
+      padding: 12px 48px;
+      text-decoration: none;
+      font-size: 25px;
+      font-family:serif;
+      font-style: italic;
+    }
+    .navigationBar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .navigationBar a.active {
+      background-color: rgb(154, 188, 86);
+      color: white;
+    }  
+    .background {
+      background-image: url("bg.jpg");
+      background-position: center;
+      background-size: 1460px 400px;
+      background-repeat: no-repeat;
+      opacity: 0.35;   
+    }
+    .backgroundDemoDiv {
+      width: 96%;
+      height: 250px;
+      margin-top: 10px;
+      border: 0.5px solid rgb(80, 128, 60);
+      padding: 50px 25px;
+    }
+
+    h2{
+      color: black;
+      text-align: center;
+      opacity: 1.2;
+    }
+    p{
+      font-size: 18px;
+      text-align: center;
+    }
+    body{
+      background-color: #f3dbf0;
+    }
+    
+  </style>
+  <body>
+    <img src="logo.png" 
+      alt="Logo" 
+      width="55px" 
+      height="54px">
+    <nav class="navigationBar">
+      <a class="active class1" href="#hornbill" onClick="activehornbill()" id="hornbill">Hornbill</a>
+      <a class="contact-link" href="htmlpage2.html" onClick="activecontact()" id="contact">Contact Us</a>
+    </nav>
+    <script type="text/javascript">
+      function activehornbill() {
+        document.getElementById("hornbill").classList.add("active");
+        document.getElementById("contact").classList.remove("active");
+      }
+      function activecontact() {
+        document.getElementById("hornbill").classList.remove("active");
+        document.getElementById("contact").classList.add("active");
+      }
+    </script>
+    <div class = "backgroundDemoDiv background">
+      <h2>WELCOME TO <i>HORNBILL</i></h2>
+      <p>
+        "Greetings and welcome to hornbill!<br> 
+        Hornbills are one of the most fascinating avian families, known for their distinctive and often dramatic appearance. These birds, belonging to the family Bucerotidae, are primarily found in the tropical and subtropical regions of Africa and Asia. Their unique features and behaviors make them a subject of interest not only to ornithologists but also to conservationists and cultural anthropologists."
+      </p>
+    </div>
+    <div style="width: 50%; float:left; padding:80px 45px;color:rgb(72, 102, 65)">
+      <p style="text-align:justify;line-height: 25px;">
+        Hornbills are easily recognizable by their large, curved bills topped with a casque—a hollow, keratinous structure. The size and shape of the casque can vary significantly among species, serving various functions, including resonance for calls and sexual selection. Their strong neck muscles and fused vertebrae support the weight of their substantial beaks, an adaptation essential for their survival.
+
+        The plumage of hornbills is generally black, white, or brown, often with striking patterns. Some species have brightly colored bare skin around the eyes and throat, adding to their distinctive appearance. The sexual dimorphism in hornbills can be subtle or pronounced, depending on the species, with males usually being larger and having more prominent casques.
+      </p>
+    </div>
+    <div style="float:right; padding: 40px 50px 40px 20px;">
+      <img src="horn.jpg" 
+        alt="hornbill picture" 
+        width="460px" 
+        height="300px">
+    </div>
+    <div style="float:left; padding: 40px 20px 40px 50px;">
+      <img src="hornculture.jpg" 
+        alt="hornbill nature" 
+        width="460px" 
+        height="300px">
+        </div>
+    <div style="width: 50%; float:right; padding:45px 80px; color:rgb(72, 102, 65)">
+      <p style="text-align:justify;line-height: 25px;">
+        Symbols and Myths: Hornbills hold a prominent place in the cultural traditions of many indigenous communities across Africa and Asia. They often symbolize qualities such as strength, fidelity, and good fortune. For instance, in some cultures, the hornbill is considered a symbol of fidelity because of the strong pair bonds they form, with males and females working together closely, especially during the nesting period.<br><br>
+        Rituals and Traditions: In various cultures, hornbill feathers and casques are used in traditional ceremonies and adornments. These items are often seen as status symbols or are believed to have protective properties. For example, the Dayak people of Borneo use hornbill motifs in their traditional arts and crafts, representing the bird's revered status in their mythology.
+
+      </p> 
+    </div>
+    <div style="text-align: center;">
+      <iframe 
+      width="1000" 
+      height="500" 
+    src="https://www.youtube.com/embed/iGLW8TUm_4k" allowfullscreen></iframe>
+    </div>
+    <div>
+      <p style="font-size: small;padding: 60px 0px 20px;">
+        All  Rights  Reserved.
+      </p>
+    </div>
+  </body>
+</html>
